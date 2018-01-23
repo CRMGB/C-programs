@@ -1,0 +1,6 @@
+>>> Warning 225 "EXPRENDEDORA.c" Line 6(17,19): Duplicate #define
+>>> Warning 208 "EXPRENDEDORA.c" Line 10(4,11): Function not void and does not return a value  EXT_isr
+>>> Warning 203 "EXPRENDEDORA.c" Line 44(1,1): Condition always TRUE
+>>> Warning 202 "EXPRENDEDORA.c" Line 19(6,7): Variable never used:   O
+      Memory usage:   ROM=15%      RAM=8% - 12%
+      0 Errors,  4 Warnings.

@@ -1,0 +1,30 @@
+[PROJECT]
+Target=Teclado_LCD.hex
+Development_Mode=
+Processor_Text=PIC16F876
+ToolSuite=CCS
+Processor=0x876F
+[Teclado_LCD]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=Teclado_LCD
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Opened Files]
+1=F:\06\Teclado_LCD.c
+2=Teclado2.c
+3=
+4=
+5=
+[Target Data]
+OptionString=-p +FM
+FileList=F:\06\Teclado_LCD.c
+[Units]
+Count=1
+1=Teclado_LCD.c (main)
+Link=0

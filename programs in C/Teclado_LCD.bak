@@ -1,0 +1,21 @@
+#include "Teclado_LCD.h"
+#include "LCD.C"
+#include "KBD.C"
+
+int a;
+
+void main()
+{
+   WHILE(1)
+   {
+      port_b_pullups(0xff);
+      lcd_init();
+      kbd_init();
+      a=0;
+      printf(LCD_PUTC,"\f Pulse una tecla");
+      while(a==0) a=kbd_getc();
+      printf(LCD_PUTC,"\f La tecla es %C", a);
+      //printf("\f La tecla es %d",a);
+      delay_ms(1000);
+   }
+}

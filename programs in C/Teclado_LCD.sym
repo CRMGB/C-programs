@@ -1,0 +1,123 @@
+004-005 @READ_PROGRAM_MEMORY.P1
+004-005 @WRITE_PROGRAM_MEMORY.P2
+006     lcd
+006     portb
+015     CCP_1_LOW
+015-016 CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B-01C CCP_2
+01C     CCP_2_HIGH
+020-021 valor
+022     a
+023-026 voltios
+027     lcd_init.i
+027-028 @ITOF.P1
+027-02A @FLT.P2
+027-02A @MULFF.P3
+027     GETTECLA.tecla
+027     MAIN.@SCRATCH
+028     GETTECLA.f
+028     lcd_putc.c
+028     lcd_init.@SCRATCH
+028     MAIN.@SCRATCH
+029     @delay_ms1.P1
+029     GETTECLA.c
+029     lcd_gotoxy.x
+029     MAIN.@SCRATCH
+02A     lcd_gotoxy.y
+02A     GETTECLA.@SCRATCH
+02A     MAIN.@SCRATCH
+02B-02E @FLT.P1
+02B     lcd_gotoxy.address
+02B-02E @MULFF.P1
+02B-02E @DIVFF.P2
+02C     lcd_gotoxy.@SCRATCH
+02D     lcd_send_byte.address
+02E     lcd_send_byte.n
+02F     lcd_read_byte.low
+02F-032 @DIVFF.P1
+02F     lcd_send_byte.@SCRATCH
+02F     @MULFF.@SCRATCH
+02F     @FLT.@SCRATCH
+030     lcd_read_byte.high
+030     lcd_send_nibble.n
+030     @MULFF.@SCRATCH
+030     @FLT.@SCRATCH
+031     lcd_read_byte.@SCRATCH
+031     @MULFF.@SCRATCH
+032     @MULFF.@SCRATCH
+033     @MULFF.@SCRATCH
+033     @DIVFF.@SCRATCH
+034     @DIVFF.@SCRATCH
+035     @DIVFF.@SCRATCH
+036     @DIVFF.@SCRATCH
+037     @DIVFF.@SCRATCH
+038     @DIVFF.@SCRATCH
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+10D     @READ_PROGRAM_MEMORY.P1
+10D     @WRITE_PROGRAM_MEMORY.P2
+10F     @WRITE_PROGRAM_MEMORY.P1
+10F     @READ_PROGRAM_MEMORY.P2
+
+0111  @delay_ms1
+0004  LCD_INIT_STRING
+0133  lcd_read_byte
+0126  lcd_send_nibble
+0132  lcd_send_byte
+016C  lcd_init
+01FE  lcd_gotoxy
+01E7  lcd_putc
+000C  TECLAS
+0198  GETTECLA
+03B7  MAIN
+0020  @const95
+0038  @const96
+021C  @ITOF
+0239  @MULFF
+02AE  @DIVFF
+0378  @FLT
+0049  @const108
+005C  @const109
+006D  @const110
+0082  @const113
+0093  @const116
+00A7  @const119
+00BD  @const122
+00D3  @const125
+00EA  @const128
+00FE  @const131
+07EB  @goto10345
+03B7  @cinit
+
+Project Files:
+    Teclado_LCD.c
+    Teclado_LCD.h
+    C:\Program Files (x86)\PICC\devices\16F876.h
+    LCD.C
+    Teclado2.c
+
+Units:
+    F:\06\Teclado_LCD.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F876
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      F:\06\Teclado_LCD.err
+    Ext Symbols: F:\06\Teclado_LCD.esym
+    INHX8:       F:\06\Teclado_LCD.hex
+    Symbols:     F:\06\Teclado_LCD.sym
+    List:        F:\06\Teclado_LCD.lst
+    Debug/COFF:  F:\06\Teclado_LCD.cof
+    Call Tree:   Teclado_LCD.tre
+    Statistics:  Teclado_LCD.sta
